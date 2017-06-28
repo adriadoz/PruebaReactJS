@@ -1,16 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/app.jsx';
+
+ReactDOM.render(<App />, document.getElementById('root'));
 
 
-const Saludo = (props) => {
- return(
-     <div>   
-        <h1>{props.title}</h1>
-        <h2>{props.subtitle}</h2>
-     </div>
- )
-}
-ReactDOM.render(
-    <Saludo title='Hello world from props' subtitle='Subtitleeee'/>,
-    document.getElementById('app')
-)
